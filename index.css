@@ -573,7 +573,7 @@ p {
     inset: 0 0 0 30%;
     background: hsl(0 0% 100% /0.1);
     backdrop-filter: blur(9rem);
-    padding: min(30vh, 10rem) 2em;
+    padding: 0 2em 13em 2em;
     margin: 0;
     flex-direction: column;
     transform: translateX(100%);
