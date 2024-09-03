@@ -153,9 +153,30 @@ p {
   height: 272px;
   width: 272px;
   border-radius: 50%;
+  border: 0;
   font-size: clamp(1rem, 2vw + 1rem, 30px);
   text-transform: uppercase;
   cursor: pointer;
+  position: relative;
+  transition: all 0.7s;
+}
+
+.explore::after {
+  content: "";
+  position: absolute;
+  width: 25rem;
+  height: 25rem;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.7);
+  border-radius: 50%;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.explore:hover::after {
+  opacity: 1;
 }
 
 /* section--1 */
@@ -649,8 +670,8 @@ p {
   .explore {
     font-size: medium;
     cursor: pointer;
-    height: 144px;
-    width: 144px;
+    height: 200px;
+    width: 200px;
   }
 
   /* section--1 */
