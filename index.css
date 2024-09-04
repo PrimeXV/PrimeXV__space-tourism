@@ -589,12 +589,11 @@ p {
     position: fixed;
     align-items: flex-start;
     gap: 3rem;
-    position: fixed;
     z-index: 1000;
     inset: 0 0 0 30%;
     background: hsl(0 0% 100% /0.1);
     backdrop-filter: blur(9rem);
-    padding: 0 2em 13em 2em;
+    padding: 0 2em 25em 2em;
     margin: 0;
     flex-direction: column;
     transform: translateX(100%);
